@@ -1,0 +1,19 @@
+.background{
+}
+
+.button{
+    border:1px solid transparent;
+    padding:12px 20px;
+    line-height:15px;
+    font-size:14px;
+    font-family:inherit;
+    -webkit-appearance:none;
+    display:inline-block;
+    border-radius:8px;
+    text-decoration:none;
+    text-align:center;
+    user-select:none;
+    cursor:pointer;
+    transition:all .25s linear;
+    outline:none
+}
