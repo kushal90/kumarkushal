@@ -7,6 +7,14 @@ function playSound(event) {
     audio.currentTime = 0;
     audio.play();
 }
+function playSoundtouch(event) {
+    let key = event.changedTouches[0].target;
+    let keyId = key.id + "-audio";
+    let audio = document.getElementById(keyId);
+    key.classList.add('playing');
+    audio.currentTime = 0;
+    audio.play();
+}
 function removeTransition(e) {
     e.target.classList.remove("playing");
 }
@@ -14,4 +22,4 @@ const keys = Array.from(document.getElementsByClassName("key key--unpressed"));
 keys.forEach(element => element.addEventListener("transitionend", removeTransition));
 
 window.addEventListener('keydown', playSound);
-window.addEventListener('touchstart', playSound, false);
+document.getElementById("keysDiv").addEventListener('touchstart', playSoundtouch);
