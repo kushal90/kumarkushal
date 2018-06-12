@@ -2,7 +2,7 @@
 }
 
 .button{
-    border:1px solid transparent;
+    border:1rem solid black;
     padding:12px 20px;
     line-height:15px;
     font-size:14px;

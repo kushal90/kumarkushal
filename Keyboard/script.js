@@ -14,3 +14,4 @@ const keys = Array.from(document.getElementsByClassName("key key--unpressed"));
 keys.forEach(element => element.addEventListener("transitionend", removeTransition));
 
 window.addEventListener('keydown', playSound);
+window.addEventListener('touchstart', playSound, false);
