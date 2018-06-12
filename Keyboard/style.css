@@ -1,19 +1,27 @@
-.background{
+html{
+    background: url(images/drums.jpg) center;
+    background-size: cover;
+}
+.keys{
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.key{
+    border: 0.3rem solid black;
+    width:10rem;
+    margin: auto;
+    background: rgba(0,0,0,0.2);
+    text-shadow: 0 0 .5rem black;
+    transition: all 0.2s ease;
+    color: aliceblue;
+    font-size: xx-large;
 }
 
-.button{
-    border:1px solid transparent;
-    padding:12px 20px;
-    line-height:15px;
-    font-size:14px;
-    font-family:inherit;
-    -webkit-appearance:none;
-    display:inline-block;
-    border-radius:8px;
-    text-decoration:none;
-    text-align:center;
-    user-select:none;
-    cursor:pointer;
-    transition:all .25s linear;
-    outline:none
+.playing {
+    transform: scale(1.1);
+    border-color: gold;
+    box-shadow: 0 0 1rem goldenrod;
 }

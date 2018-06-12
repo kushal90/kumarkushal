@@ -6,10 +6,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<img class="background--image" src="images/drums.jpg">
-<button class="key key--unpressed">
-    some <br> text
-</button>
-<button class="key key--pressed"></button>
+    <div class="keys">
+        <button id="KeyA" class="key key--unpressed" onkeydown="playSound()">
+            A
+        </button>
+        <button id="KeyS" class="key key--unpressed" onkeydown="playSound()">
+            S
+        </button>
+        <button id="KeyD" class="key key--unpressed" onkeydown="playSound()">
+            D
+        </button>
+        <button id="KeyF" class="key key--unpressed" onkeydown="playSound()">
+            F
+        </button>
+        <button id="KeyG" class="key key--unpressed" onkeydown="playSound()">
+            G
+        </button>
+        <button id="KeyH" class="key key--unpressed" onkeydown="playSound()">
+            H
+        </button>
+        <button id="KeyJ" class="key key--unpressed" onkeydown="playSound()">
+            J
+        </button>
+        <button id="KeyK" class="key key--unpressed" onkeydown="playSound()">
+            K
+        </button>
+        <button id="KeyL" class="key key--unpressed" onkeydown="playSound()">
+            L
+        </button>
+    </div>
+    <audio id="KeyA-audio" src="sounds/boom.wav"></audio>
+    <audio id="KeyS-audio" src="sounds/clap.wav"></audio>
+    <audio id="KeyD-audio" src="sounds/kick.wav"></audio>
+    <audio id="KeyF-audio" src="sounds/hihat.wav"></audio>
+    <audio id="KeyG-audio" src="sounds/openhat.wav"></audio>
+    <audio id="KeyH-audio" src="sounds/tom.wav"></audio>
+    <audio id="KeyJ-audio" src="sounds/ride.wav"></audio>
+    <audio id="KeyK-audio" src="sounds/snare.wav"></audio>
+    <audio id="KeyL-audio" src="sounds/tink.wav"></audio>
 </body>
+<script src="script.js"></script>
 </html>
