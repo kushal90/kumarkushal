@@ -1,0 +1,76 @@
+html{
+    font-size: 100%;
+    background: url("images/wall.jpg") center;
+    background-size: 105%;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.clock{
+    border: 10px solid black;
+    border-radius: 50%;
+    height: 30rem;
+    width: 30rem;
+    margin: auto;
+    background: url("images/ios_clock.svg") no-repeat center;
+    background-size: 90%;
+    box-shadow:5px 5px 50px 1px black;
+    position: relative;
+}
+
+.clock__hands{
+    /*transition: transform 1s linear;*/
+    position:absolute;
+    /*height: 50%;*/
+    /*width: 0.5em;*/
+    background: black;
+    /*left:50%;*/
+    /*transform: translate(0,100%);*/
+    /*transform: rotate(90deg);*/
+    /*transform-origin: 50% 100%;*/
+    /*animation: mymove linear 6s infinite;*/
+}
+@keyframes mymove {
+    from {transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+#hour-hand{
+    height: 20%;
+    width: 0.5em;
+    top:30%;
+    left:calc(50% - 0.25em);
+    transform-origin: 50% 100%;
+    /*animation: mymove linear calc(60*60*60s) infinite;*/
+}
+
+#minute-hand{
+    height: 40%;
+    width: 0.3em;
+    left:calc(50% - 0.15em);
+    top:10%;
+    transform-origin: 50% 100%;
+    /*animation: mymove linear calc(60*60s) infinite;*/
+}
+
+#second-hand{
+    height: 50%;
+    width: 0.1em;
+    left:calc(50% - 0.05em);
+    transform-origin: 50% 100%;
+    /*animation: mymove linear calc(60s) infinite;*/
+}
+
+.clock__centre{
+    position: absolute;
+    left: calc(50% - 3rem);
+    top: calc(50% - 3rem);
+}
