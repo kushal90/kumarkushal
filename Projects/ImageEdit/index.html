@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="blurImage">
+    </div>
+    <h1>Image Editor</h1>
+    <div class="sliders">
+        <div class="input-container">
+            <label for="grayscale">Grayscale</label>
+            <input id="grayscale" class="slider" type="range" min="0" max="10" value="0">
+        </div>
+        <div class="input-container">
+            <label for="blur">Blur</label>
+            <input id="blur" class="slider" type="range" min="0" max="10" value="0">
+        </div>
+        <div class="input-container">
+            <label for="sepia">Sepia</label>
+            <input id="sepia" class="slider" type="range" min="0" max="10" value="0">
+        </div>
+        <div class="input-container">
+            <label for="transparency">Transparency</label>
+            <input id="transparency" class="slider" type="range" min="0" max="10" value="0">
+        </div>
+    </div>
+    <div class="image_container">
+        <img id="image-to-show" src="../Keyboard/images/drums.jpg" alt="Upload here!">
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
