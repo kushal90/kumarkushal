@@ -1,27 +1,74 @@
 html{
     background: url(images/drums.jpg) center;
     background-size: cover;
+    overflow: hidden;
 }
+
+body{
+    margin: 0px;
+}
+
+/* Box-sizing border-box */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*.keys{*/
+    /*border: goldenrod solid 10px;*/
+    /*display: flex;*/
+    /*flex: 1;*/
+    /*min-height: 20vh;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*text-shadow:4px 4px 0 rgba(0,0,0,0.1);*/
+/*}*/
+/*.key{*/
+    /*border: 0.3rem solid black;*/
+    /*width:10rem;*/
+    /*margin: auto;*/
+    /*background: rgba(0,0,0,0.2);*/
+    /*text-shadow: 0 0 .5rem black;*/
+    /*transition: all 0.2s ease;*/
+    /*color: aliceblue;*/
+    /*font-size: xx-large;*/
+    /*align-items: stretch;*/
+/*}*/
+
+.heading_text{
+    display: flex;
+    color:white;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,1,1);
+    font-family: 'Raleway', sans-serif;;
+}
+
 .keys{
     display: flex;
-    flex: 1;
-    min-height: 10vh;
-    align-items: center;
-    justify-content: center;
+    height: 90vh;
+    flex-wrap: wrap;
+    /*align-items: center;*/
 }
+
 .key{
-    border: 0.3rem solid black;
-    width:10rem;
-    margin: auto;
+    color: aliceblue;
+    border: solid 1px black;
+    /*margin: auto;*/
     background: rgba(0,0,0,0.2);
     text-shadow: 0 0 .5rem black;
-    transition: all 0.2s ease;
-    color: aliceblue;
     font-size: xx-large;
+    /*flex:1;*/
+    width: calc(33.33333%);
+    transition: all 0.1s ease;
 }
 
 .playing {
-    transform: scale(1.1);
-    border-color: gold;
-    box-shadow: 0 0 1rem goldenrod;
+    transform: scale(1.01);
+    font-size: x-large;
+    border-color: goldenrod;
+    box-shadow: 0 0 10vh goldenrod;
+}
+
+.transparent{
+    border-color: transparent;
 }
