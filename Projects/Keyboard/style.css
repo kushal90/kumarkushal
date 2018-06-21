@@ -45,7 +45,6 @@ body{
 }
 
 .keys{
-    border: 10px solid goldenrod;
     display: flex;
     height: 90%;
     flex-wrap: wrap;
