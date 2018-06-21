@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5833dd60-4eb3-499a-9e46-74da1da266f5" name="Default" comment="" />
+    <list default="true" id="5833dd60-4eb3-499a-9e46-74da1da266f5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/Keyboard/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/Keyboard/style.css" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,7 +16,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projects/Keyboard/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projects/Keyboard/script.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Projects/Keyboard/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1104">
+              <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,6 +67,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Projects/Array Workout/index.html" />
         <option value="$PROJECT_DIR$/Projects/Array Workout/script.js" />
+        <option value="$PROJECT_DIR$/Projects/Keyboard/style.css" />
       </list>
     </option>
   </component>
@@ -77,6 +101,17 @@
             <path>
               <item name="kumarkushal" type="b2602c69:ProjectViewProjectNode" />
               <item name="kumarkushal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kumarkushal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kumarkushal" type="462c0819:PsiDirectoryNode" />
+              <item name="Projects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kumarkushal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kumarkushal" type="462c0819:PsiDirectoryNode" />
+              <item name="Projects" type="462c0819:PsiDirectoryNode" />
+              <item name="Keyboard" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -122,25 +157,28 @@
       <workItem from="1529063815922" duration="7780000" />
       <workItem from="1529167553411" duration="2827000" />
       <workItem from="1529326563843" duration="4371000" />
+      <workItem from="1529573180251" duration="1079000" />
+      <workItem from="1529574360461" duration="955000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69414000" />
+    <option name="totallyTimeSpent" value="71448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09841479" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -176,20 +214,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Projects/Array Workout/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/04 - Array Cardio Day 1/index-FINISHED.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="26" lean-forward="true" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/04 - Array Cardio Day 1/index-FINISHED.html" />
     <entry file="file://$PROJECT_DIR$/Projects/Array Workout/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -197,13 +222,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/04 - Array Cardio Day 1/index-START.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/04 - Array Cardio Day 1/index-START.html" />
     <entry file="file://$PROJECT_DIR$/Projects/Array Workout/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -211,16 +230,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/04 - Array Cardio Day 1/index-START.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/04 - Array Cardio Day 1/index-FINISHED.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/04 - Array Cardio Day 1/index-START.html" />
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/04 - Array Cardio Day 1/index-FINISHED.html" />
     <entry file="file://$PROJECT_DIR$/Projects/Array Workout/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -252,13 +263,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/03 - CSS Variables/index-FINISHED.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/03 - CSS Variables/index-FINISHED.html" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -283,13 +288,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/03 - CSS Variables/index-FINISHED.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/03 - CSS Variables/index-FINISHED.html" />
     <entry file="file://$PROJECT_DIR$/Projects/ImageEdit/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1547">
@@ -317,42 +316,17 @@
     <entry file="file://$PROJECT_DIR$/script.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/01 - JavaScript Drum Kit/index-START.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-850" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/01 - JavaScript Drum Kit/index-FINISHED.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="72" column="17" lean-forward="true" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/01 - JavaScript Drum Kit/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/01 - JavaScript Drum Kit/index-START.html" />
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/01 - JavaScript Drum Kit/index-FINISHED.html" />
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/01 - JavaScript Drum Kit/style.css" />
     <entry file="file://$PROJECT_DIR$/Keyboard/script.js" />
     <entry file="file://$PROJECT_DIR$/Keyboard/index.html" />
     <entry file="file://$PROJECT_DIR$/Keyboard/style.css" />
     <entry file="file://$PROJECT_DIR$/Clock/style.css" />
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/02 - JS and CSS Clock/index-FINISHED.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/02 - JS and CSS Clock/index-FINISHED.html" />
     <entry file="file://$PROJECT_DIR$/Clock/index.html" />
     <entry file="file://$PROJECT_DIR$/Clock/script.js" />
     <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projects/Keyboard/script.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Projects/Clock/script.js">
@@ -382,13 +356,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/03 - CSS Variables/index-FINISHED.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/03 - CSS Variables/index-FINISHED.html" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -396,20 +364,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/04 - Array Cardio Day 1/index-FINISHED.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="90" column="44" lean-forward="true" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/04 - Array Cardio Day 1/index-START.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/04 - Array Cardio Day 1/index-FINISHED.html" />
+    <entry file="file://$PROJECT_DIR$/../../Cross-Development/Javascript30/JavaScript30-master/04 - Array Cardio Day 1/index-START.html" />
     <entry file="file://$PROJECT_DIR$/Projects/Array Workout/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
@@ -421,6 +377,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projects/Keyboard/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projects/Keyboard/script.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projects/Keyboard/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
         </state>
       </provider>
     </entry>
