@@ -5,37 +5,80 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class ="c-header">
+    <header class ="c-header">
     <div class = "c-header__burger-container">
-        <div class="c-header__burger ">
+        <div class="c-header__burger">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <div class="c-header__logo">
-                KK
+
         </div>
     </div>
+
     <nav class = c-header__nav>
         <div class="c-header__list">
             <a class="c-header__link" href="#c-projects">Projects</a>
             <a class="c-header__link" href="#c-contact">Lorem Ipsum</a>
         </div>
-        <div class="button button__hire-me">
+    </nav>
+
+    <button class="c-header__hire-me-button">Contact me</button>
+    </header>
+    <div class="c-all-content">
+        <section class = "c-all-content__intro" id = "intro">
+        <div id="profile-pic-and-icons">
+            <img src="assets/images/IMG_7623.jpg" alt="profile_picture" id = "profile-picture">
+            <div class="social-icons">
+                <a href="https://www.github.com/kushal90">
+                    <img src="assets/images/002-github.png" alt="github_link" id="icon-github">
+                </a>
+                <a href="https://www.linkedin.com/in/kumarku/">
+                    <img src="assets/images/001-linkedin.png" alt="linkedin_link" id="icon-linkedin">
+                </a>
+            </div>
+        </div>
+        <div id="profile__text">
 
         </div>
-    </nav>
-</header>
-<section class = "c-projects" id="c-projects">
-    <a href="Projects/Keyboard/index.html">Keyboard Project</a>
-    <a href="Projects/Clock/index.html" class="">Clock Project</a>
-    <a href="Projects/ImageEdit/index.html" class="">Edit your images!</a>
-    <a href="Projects/CatchTheBall/index.html" class="">Touchpad breaker!</a>
-</section>
-    <section class = "c-contact" id="c-contact">
-
     </section>
-
+        <section class = "c-all-content__projects">
+        <div id="projects-title">Projects</div>
+        <div class="c-projects-portfolio">
+        <a href="Projects/Keyboard/index.html" class="c-project__item" id="sound-maker-project">
+            <div class="c-project__item__title">Sound maker</div>
+            <div class="c-project__item__date">Jun '18</div>
+            <div class="c-project__item__status"></div>
+            <div class="c-project__item__image"></div>
+        </a>
+        <a href="Projects/Clock/index.html" class="c-project__item">
+            <div class="c-project__item__title">Sound maker</div>
+            <div class="c-project__item__date">Jun '18</div>
+            <div class="c-project__item__status"></div>
+            <div class="c-project__item__image"></div>
+        </a>
+        <a href="Projects/ImageEdit/index.html" class="c-project__item">
+            <div class="c-project__item__title">Image Editor</div>
+            <div class="c-project__item__date">Jun '18</div>
+            <div class="c-project__item__status"></div>
+            <div class="c-project__item__image"></div>
+        </a>
+        <a href="Projects/CatchTheBall/index.html" class="c-project__item">
+            <div class="c-project__item__title">Touchpad Breaker!</div>
+            <div class="c-project__item__date">Jul '18</div>
+            <div class="c-project__item__image">
+                <img src="">
+            </div>
+        </a>
+        </div>
+        <div id="all-projects-link">All projects</div>
+    </section>
+    </div>
+    <footer class="c-footer">
+        hfjdk
+</footer>
 </body>
+<script src="script.js">
+</script>
 </html>
