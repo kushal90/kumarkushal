@@ -3,11 +3,12 @@
     <meta charset="utf-8">
     <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
 <body>
     <header class ="c-header">
-    <div class = "c-header__burger-container">
-        <div class="c-header__burger">
+        <div class = "c-header__burger-container">
+        <div class="c-header__burger" id="top-burger">
             <span></span>
             <span></span>
             <span></span>
@@ -16,32 +17,34 @@
 
         </div>
     </div>
-
-    <nav class = c-header__nav>
+        <nav class = c-header__nav>
         <div class="c-header__list">
             <a class="c-header__link" href="#c-projects">Projects</a>
             <a class="c-header__link" href="#c-contact">Lorem Ipsum</a>
         </div>
     </nav>
-
-    <button class="c-header__hire-me-button">Contact me</button>
+        <a href="mailto:k.kumar13@hotmail.com?Subject=Hello"><button class="c-header__contact-me-button">Contact me</button></a>
     </header>
     <div class="c-all-content">
         <section class = "c-all-content__intro" id = "intro">
-        <div id="profile-pic-and-icons">
-            <img src="assets/images/IMG_7623.jpg" alt="profile_picture" id = "profile-picture">
-            <div class="social-icons">
-                <a href="https://www.github.com/kushal90">
+            <div id="profile-pic-and-icons">
+                <img src="assets/images/IMG_7623.jpg" alt="profile_picture" id = "profile-picture">
+                <div class="social-icons">
+                <a href="https://www.github.com/kushal90" id="icon-github-link">
                     <img src="assets/images/002-github.png" alt="github_link" id="icon-github">
                 </a>
                 <a href="https://www.linkedin.com/in/kumarku/">
                     <img src="assets/images/001-linkedin.png" alt="linkedin_link" id="icon-linkedin">
                 </a>
             </div>
-        </div>
-        <div id="profile__text">
-
-        </div>
+            </div>
+            <div id="profile__text">
+                <div id = "static-text">
+                    Hi there! I am Kushal. <br>
+                    I love to work with<br>
+                </div>
+                <div id = "dynamic-text"></div>
+            </div>
     </section>
         <section class = "c-all-content__projects">
         <div id="projects-title">Projects</div>
@@ -75,9 +78,6 @@
         <div id="all-projects-link">All projects</div>
     </section>
     </div>
-    <footer class="c-footer">
-        hfjdk
-</footer>
 </body>
 <script src="script.js">
 </script>
