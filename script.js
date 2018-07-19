@@ -16,7 +16,7 @@ burger.addEventListener("click", () =>
 {
 	console.log(burger.classList);
 	burger.classList.toggle("c-header__burger-clicked");
-	document.getElementsByClassName("c-header__nav")[0].classList.toggle("c-header__nav--active");
+
 });
 
 // To position profile pic in the centre.

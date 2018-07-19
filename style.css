@@ -1,7 +1,6 @@
 
 :root {
 	--background-color: white;
-	--burger-color: black;
 	--color1: #EDFAFD;
 	--color2: #AED9DA;
 	--color3: #3DDAD7;
@@ -11,11 +10,6 @@
 	--header-padding: 3vh;
 }
 
-
-* {
-	box-sizing: border-box;
-	background-color: lightyellow;
-}
 html{
 	box-sizing: border-box;
 	margin:0;
@@ -36,7 +30,14 @@ body{
 	grid-template-rows: auto auto auto;
 	grid-template-areas: "header" "all-content" "footer";
 }
-
+a{
+text-decoration: none;
+	color: var(--color4);
+}
+a:visited{
+	text-decoration: none;
+	color: var(--color4);
+}
 .c-header{
 	z-index: 1;
 	grid-area: header;
@@ -46,6 +47,7 @@ body{
 	position: sticky;
 	top:0;
 	left:0;
+	background: white;
 	padding: var(--header-padding);
 	animation: fadeInFromTop var(--header-animation-time) ease-in;
 }
@@ -54,8 +56,8 @@ body{
 }
 .c-header__burger{
 	display: none;
-	width: calc(30vw/6);
-	height: calc(24vw/6);
+	width: 30px;
+	height: 24px;
 	margin-right: 15px;
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
@@ -71,9 +73,9 @@ body{
 .c-header__burger span{
 	display: block;
 	position: absolute;
-	height: calc(4vw/6);
+	height: 4px;
 	width: 100%;
-	background: var(--burger-color);
+	background: var(--color5);
 	border-radius: 2px;
 	opacity: 1;
 	left: 0;
@@ -90,13 +92,13 @@ body{
 	top:0;
 }
 .c-header__burger span:nth-child(2){
-	top: calc(10vw/6);
+	top: 10px;
 }
 .c-header__burger span:nth-child(3){
-	top: calc(20vw/6);
+	top:20px;
 }
 .c-header__burger-clicked span:nth-child(1){
-	top: calc(10vw/6);
+	top: 10px;
 	-webkit-transform: rotate(135deg);
 	-moz-transform: rotate(135deg);
 	-o-transform: rotate(135deg);
@@ -106,7 +108,7 @@ body{
 	opacity: 0;
 }
 .c-header__burger-clicked span:nth-child(3){
-	top: calc(10vw/6);
+	top: 10px;
 	-webkit-transform: rotate(-135deg);
 	-moz-transform: rotate(-135deg);
 	-o-transform: rotate(-135deg);
@@ -118,8 +120,10 @@ body{
 	color: var(--color4);
 }
 .c-header__nav{
+	display: none;
 }
 .c-header__contact-me-button{
+	height: 24px;
 	border-radius: 7px;
 	align-self: center;
 	background: var(--color1);
@@ -127,7 +131,6 @@ body{
 	box-shadow: none;
 	border: 1px solid var(--color5);
 	cursor: pointer;
-	font-size: 5vw;
 }
 .c-all-content{
 	position: relative;
@@ -142,7 +145,7 @@ body{
 			"profile-text profile-text profile-text profile-text";
 	justify-content: center;
 	align-items: center;
-	height: calc(100vh - 6vh - 30vw/6);
+	height: calc(100vh - 6vh - 24px);
 
 }
 #profile-pic-and-icons{
@@ -165,14 +168,6 @@ body{
 .social-icons{
 	display: flex;
 	flex-direction: column;
-}
-.social-icons a:focus {
-	background-color: transparent;
-	outline: none;
-}
-.social-icons a{
-	text-decoration: none;
-	color: var(--color4);
 }
 #icon-github, #icon-linkedin{
 	opacity: 0;
@@ -199,7 +194,7 @@ body{
 	animation: visibility 0.5s ease-in;
 	animation-delay: calc(var(--header-animation-time)*1.2 + 1.7s);
 	animation-fill-mode: forwards;
-	font-size: 7vw;
+	font-size: x-large;
 	grid-area: profile-text;
 }
 #dynamic-text{
@@ -346,15 +341,13 @@ body{
 	to {opacity: 1;}
 }
 @media screen and (orientation: portrait) {
-
-	.c-header__burger{
-	display: inherit;
-	}
-
+.c-header__burger{
+	display: block;
+}
 	#profile-picture{
-		width: 50vw;
-		height: 50vw;
-	}
+	width: 50vw;
+	height: 50vw;
+}
 	#icon-github, #icon-linkedin{
 		opacity: 0;
 		width: 10vw;
@@ -362,33 +355,5 @@ body{
 		margin-bottom: 1vw;
 		margin-right: 2vw;
 	}
-	.c-header__nav {
-		display: flex;
-		position:absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100vh;
-		padding-top: 58px;
-		padding-bottom: 55px;
-		z-index: -2;
-		flex-direction: column;
-		box-shadow: 1px 1px 1px 1px rgba(0,0,0,.05);
-		transform: translateX(-100vw);
-		transition: all .3s ease;
-		justify-content: center;
-		align-items: center;
-	}
-	.c-header__nav--active {
-		transform:translateY(0)
-	}
-	.c-header__link {
-		margin: 2vh 0;
-		color: #76768c;
-		text-decoration: none;
-		transition: color .15s linear;
-	}
-	.c-header__link:hover {
-		color: black;
-	}
+	
 }
