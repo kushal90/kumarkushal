@@ -1,0 +1,115 @@
+:root{
+	--main-text-height: 10vh;
+}
+
+* {
+	box-sizing: border-box;
+	background-color: white;
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+
+html, body{
+	margin: 0;
+	overflow: hidden;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-rows: 20fr 80fr;
+	align-content: center;
+}
+
+.main-text{
+	justify-self: center;
+	align-self: center;
+	margin: 2vh 0 2vh 0;
+	font-size: x-large;
+}
+
+.cp-social-links{
+	display: flex;
+	flex-direction: row;
+}
+
+.social-link{
+	flex: 1;
+	align-items: center;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	transition: flex 0.5s ease-out;
+	border-left: 1px black dashed;
+}
+
+.social-link > *:first-child {
+	width: 10vw;
+	height: 10vw;
+}
+
+.social-link > *:last-child {
+	display: none;
+}
+
+.social-link:hover{
+	flex:3;
+}
+
+.social-link:hover > *:last-child {
+	display: block;
+
+}
+.social-link:hover > *:first-child {
+
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.email{
+	border-left: none;
+}
+
+.email:hover, .email:hover > *{
+	background-color: lightsalmon;
+}
+
+.skype:hover, .skype:hover > *{
+	background-color: lightskyblue;
+}
+
+.facebook:hover, .facebook:hover > :last-child{
+	background-color: royalblue;
+}
+
+.facebook > :first-child{
+border-radius: 2vw;
+}
+
+.linkedin:hover, .linkedin:hover > *{
+	background-color: lightgoldenrodyellow;
+}
+
+.github:hover, .github:hover > *{
+	background-color: lightsteelblue;
+}
+
+@media screen and (orientation: portrait) {
+	.cp-social-links{
+		flex-direction: column;
+	}
+	.social-link{
+		flex-direction: row;
+	}
+	.social-link:hover{
+		flex: 2;
+	}
+}
+
+@media screen and ()
