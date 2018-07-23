@@ -42,8 +42,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	transition: flex 0.5s ease-out;
-	border-left: 1px black dashed;
+	transition: flex 0.5s ease-in;
 }
 
 .social-link > *:first-child {
@@ -53,6 +52,8 @@ body{
 
 .social-link > *:last-child {
 	display: none;
+	border: 1px black dashed;
+	padding: 1vw;
 }
 
 .social-link:hover{
@@ -70,10 +71,6 @@ body{
 a {
 	text-decoration: none;
 	color: black;
-}
-
-.email{
-	border-left: none;
 }
 
 .email:hover, .email:hover > *{
@@ -111,5 +108,3 @@ border-radius: 2vw;
 		flex: 2;
 	}
 }
-
-@media screen and ()

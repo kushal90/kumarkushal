@@ -3,3 +3,5 @@
 /node_modules/
 package-lock.json
 *.iml
+assets/.DS_Store
+assets/images/.DS_Store
