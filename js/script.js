@@ -1,5 +1,5 @@
 
-let skills = ["Javascript", "Node.js", "BrowserSync", "Gulp"];
+let skills = ["Javascript", "Node.js", "BrowserSync", "npm"];
 let skillPosition = -1;
 function writeText() {
 	if (skillPosition === skills.length-1)
@@ -24,10 +24,14 @@ function positionProfilePic() {
 		let w = window.innerWidth;
 		let h = window.innerHeight;
 		let profilePic = document.getElementById("profile-picture");
-		let marginLeft = (w-profilePic.getAttribute("height"))
-			- (w-profilePic.getAttribute("height")-document.getElementById("icon-github").width);
-		profilePic.setAttribute("style", `margin-left: ${marginLeft}`);
-
+		let marginLeft = (w-profilePic.width)
+			- (w-profilePic.width-document.getElementById("icon-github").width) + profilePic.width*4/100;
+		profilePic.setAttribute("style", `margin-left: ${marginLeft}px`);
+		console.log(marginLeft);
+		console.log(document.getElementById("profile-picture").width);
+		console.log(document.getElementById("icon-github").width);
+	// document.getElementById("body").setAttribute("style", `max-height: ${w}`);
 }
+
 let interval = setInterval(writeText, 1000);
 positionProfilePic();

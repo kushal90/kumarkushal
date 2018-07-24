@@ -1,0 +1,77 @@
+.c-all-content__projects{
+	box-sizing: inherit;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+	margin: 4vh 0.5vw;
+	padding: 0 0 0.5vw 0;
+	justify-items: center;
+	align-items: center;
+}
+#projects-title{
+	padding: 0 0 3vh 0;
+	font-size: x-large;
+	opacity: 0;
+	animation: visibility 0.5s ease-in;
+	animation-delay: calc(var(--header-animation-time)*1.2 + 2.2s);
+	animation-fill-mode: forwards;
+}
+.c-projects-portfolio{
+	box-sizing: inherit;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0.5vw;
+	margin: 0 0.5vw;
+	justify-self: stretch;
+}
+.c-project__item{
+	box-sizing: inherit;
+	border: 1px solid transparent;
+	border-radius: 1vw;
+	height: calc((50vw - 0.5vw - 0.25vw)*1.5);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 4fr 1fr;
+	grid-template-areas: "status date" "image image" "title title";
+	transition: all 0.5s ease-in;
+	transition-delay: 0.25s;
+}
+.c-project__item:nth-child(n){
+	opacity: 0;
+	animation: project__item-animation 1s ease-in;
+	animation-delay: calc(var(--header-animation-time)*1.2 + 2.7s);
+	animation-fill-mode: forwards;
+}
+.c-project__item:nth-child(2n){
+	opacity: 0;
+	animation: project__item-animation-even 1s ease-in;
+	animation-delay: calc(var(--header-animation-time)*1.2 + 2.7s);
+	animation-fill-mode: forwards;
+}
+.c-project__item:hover{
+	border-color: black;
+}
+.c-project__item__title{
+	grid-area: title;
+	justify-self: center;
+	align-self: center;
+}
+.c-project__item__date{
+	grid-area: date;
+	justify-self: center;
+	align-self: center;
+}
+#all-projects-link{
+	display: flex;
+	align-items: center;
+	margin: 5vh 0 0 0;
+}
+#all-projects-link:after{
+	content: "";
+	display: block;
+	background: url("../assets/images/right-arrow.svg") no-repeat;
+	width: 15px;
+	height: 15px;
+	float: right;
+	margin: 0 6px 0 6px;
+}

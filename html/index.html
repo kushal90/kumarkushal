@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -5,7 +6,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
-<body>
+<body id="body">
     <header class ="c-header">
         <div class = "c-header__burger-container">
             <div class="c-header__burger" id="top-burger">
@@ -13,69 +14,44 @@
                 <span></span>
                 <span></span>
             </div>
-            <div class="c-header__logo">
-
-            </div>
         </div>
         <nav class = "c-header__nav">
                 <a class="c-header__link" href="../html/projects.html">Projects</a>
                 <a class="c-header__link" href="../html/contact-page.html">Contact</a>
-                <a class="c-header__link" href="">About me</a>
+                <a class="c-header__link" href="../html/about-me.html">About me</a>
                 <a class="c-header__link" href="">Download CV</a>
         </nav>
     </header>
+
     <div class="c-all-content">
         <section class = "c-all-content__intro" id = "intro">
-            <div id="profile-pic-and-icons">
-                <img src="../assets/images/IMG_7623.jpg" alt="profile_picture" id = "profile-picture">
-                <div class="social-icons">
-                <a href="https://www.github.com/kushal90" id="icon-github-link" target="_blank">
-                    <img src="../assets/images/002-github.png" alt="github_link" id="icon-github">
-                </a>
-                <a href="https://www.linkedin.com/in/kumarku/" id="icon-linkedin-link" target="_blank">
-                    <img src="../assets/images/001-linkedin.png" alt="linkedin_link" id="icon-linkedin">
-                </a>
+            <div class="c-all-content-links">
+                <a class="c-header__link" href="../html/projects.html">Projects</a>
+                <a class="c-header__link" href="../html/contact-page.html">Contact</a>
+                <a class="c-header__link" href="../html/about-me.html">About me</a>
+                <a class="c-header__link" href="">Download CV</a>
             </div>
-            </div>
-            <div id="profile__text">
-                <div id = "static-text">
-                    Hi there! I am Kushal. <br>
-                    I love to work with<br>
+            <div class = "c-all-content-middle">
+                <div id="profile-pic-and-icons">
+                    <img src="../assets/images/IMG_7623.jpg" alt="profile_picture" id = "profile-picture">
+                    <div class="social-icons">
+                        <a href="https://www.github.com/kushal90" id="icon-github-link" target="_blank">
+                            <img src="../assets/images/github_edit.png" alt="github_link" id="icon-github">
+                        </a>
+                        <a href="https://www.linkedin.com/in/kumarku/" id="icon-linkedin-link" target="_blank">
+                            <img src="../assets/images/001-linkedin.png" alt="linkedin_link" id="icon-linkedin">
+                        </a>
+                    </div>
                 </div>
-                <div id = "dynamic-text"></div>
+                <div id="profile__text">
+                    <div id = "static-text">
+                        Hi there! I am Kushal. <br>
+                        I love to work with<br>
+                    </div>
+                    <div id = "dynamic-text"></div>
+                </div>
             </div>
-    </section>
-        <section class = "c-all-content__projects">
-        <div id="projects-title">Projects</div>
-        <div class="c-projects-portfolio">
-        <a href="../Projects/Keyboard/index.html" class="c-project__item" id="sound-maker-project">
-            <div class="c-project__item__title">Sound maker</div>
-            <div class="c-project__item__date">Jun '18</div>
-            <div class="c-project__item__status"></div>
-            <div class="c-project__item__image"></div>
-        </a>
-        <a href="../Projects/Clock/index.html" class="c-project__item">
-            <div class="c-project__item__title">Sound maker</div>
-            <div class="c-project__item__date">Jun '18</div>
-            <div class="c-project__item__status"></div>
-            <div class="c-project__item__image"></div>
-        </a>
-        <a href="../Projects/ImageEdit/index.html" class="c-project__item">
-            <div class="c-project__item__title">Image Editor</div>
-            <div class="c-project__item__date">Jun '18</div>
-            <div class="c-project__item__status"></div>
-            <div class="c-project__item__image"></div>
-        </a>
-        <a href="../Projects/CatchTheBall/index.html" class="c-project__item">
-            <div class="c-project__item__title">Touchpad Breaker!</div>
-            <div class="c-project__item__date">Jul '18</div>
-            <div class="c-project__item__image">
-                <img src="">
-            </div>
-        </a>
-        </div>
-        <div id="all-projects-link">All projects</div>
-    </section>
+        </section>
     </div>
 </body>
 <script src="../js/script.js">
