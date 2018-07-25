@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+}
+
+
+
+html{
+	margin:0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Comfortaa', Geneva, Tahoma, Verdana, sans-serif;
+	font-size: 16px;
+	width: 100vw !important;
+}
+
+body{
+	margin: inherit;
+	padding: inherit;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+}
+
+.main-icon{
+	border: 1px solid blue;
+	flex: 1;
+	text-align: center;
+}
+
+.main-text{
+	flex: 4;
+}
+
+.main-icon__id-icon{
+	padding: 5vh;
+	height: 50vh;
+}
+
+@media screen and (orientation: portrait){
+
+}

@@ -40,20 +40,11 @@ body{
 	/*grid-template-rows: auto auto auto;*/
 	/*grid-template-areas: "header" "all-content" "footer";*/
 }
-.c-all-content__intro{
-	/*display: grid;*/
-	/*grid-template-columns: 1fr 4fr 1fr;*/
-	/*grid-template-rows: 50% auto;*/
-	/*grid-template-areas:*/
-			/*"likes c-all-content-middle links "*/
-			/*"likes c-all-content-middle links";*/
-	/*!*justify-content: center;*!*/
-	/*!*align-items: center;*!*/
-	/*height: 100vh;*/
+.c-all-content-intro{
 	height: 100vh;
 	display: flex;
 }
-.c-all-content__intro > *{
+.c-all-content-intro > *{
 	flex: 1;
 }
 .c-all-content-middle:before {
@@ -84,10 +75,6 @@ body{
 .c-all-content-links{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	align-self: stretch;
-	justify-content: space-evenly;
-	grid-area: links;
 }
 .c-all-content-links a {
 	text-decoration: none;
@@ -113,14 +100,14 @@ body{
 	padding-right: 0;
 	border-right: 0.5vw solid black;
 }
-#profile-pic-and-icons{
+.c-profile-pic-and-icons{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-self: center;
 	grid-area: profile-pic-and-icons;
 }
-#profile-picture{
+.c-profile-pic-and-icons-profile-pic{
 	border: 0.1vh white solid;
 	box-shadow: 5px 5px 5px #999;
 	opacity: 0;
@@ -132,19 +119,19 @@ body{
 	animation-fill-mode: forwards;
 
 }
-.social-icons{
+.c-profile-pic-and-icons-social-icons{
 	display: flex;
 	flex-direction: column;
 }
-.social-icons a:focus {
+.c-profile-pic-and-icons-social-icons a:focus {
 	background-color: transparent;
 	outline: none;
 }
-.social-icons a{
+.c-profile-pic-and-icons-social-icons a{
 	text-decoration: none;
 	color: var(--color4);
 }
-#icon-github, #icon-linkedin{
+.c-profile-pic-and-icons-social-icons-link-github, .c-profile-pic-and-icons-social-icons-link-linkedin{
 	border: 0.1vh white solid;
 	border-radius: 50%;
 	opacity: 0;
@@ -155,27 +142,25 @@ body{
 	transition: width 0.3s ease-in-out,
 	height 0.3s ease-in-out;
 }
-
-#icon-github:hover, #icon-linkedin:hover{
+.c-profile-pic-and-icons-social-icons-link-github:hover, .c-profile-pic-and-icons-social-icons-link-linkedin:hover{
 	width: 9vh;
 	height: 9vh;
 	transition: width 0.3s ease-in-out,
 				height 0.3s ease-in-out;
 }
-
-#icon-github{
+.c-profile-pic-and-icons-social-icons-link-github{
 	border: 1px white solid;
 	border-radius: 50%;
 	animation: social-icon 1s ease-in-out;
 	animation-delay: calc(var(--header-animation-time)*1.2 + 0.5s);
 	animation-fill-mode: forwards;
 }
-#icon-linkedin{
+.c-profile-pic-and-icons-social-icons-link-linkedin{
 	animation: social-icon 1s ease-in-out;
 	animation-delay: calc(var(--header-animation-time)*1.2 + 0.7s);
 	animation-fill-mode: forwards;
 }
-#profile__text{
+.c-main-text{
 	padding: 2.5vh 4vw 0 4vw;
 	text-align: center;
 	justify-self: center;
@@ -187,15 +172,13 @@ body{
 	font-size: 2em;
 	line-height: 1.375em;
 }
-#dynamic-text{
+.c-main-text-dynamic-text{
 	margin: 2vh 0 0 0;
 	color: dodgerblue;
 	text-align: center;
 	font-size: 1.5em;
 	line-height: 1.375em;
 }
-
-
 @keyframes fadeInFromTop {
 	0% {
 		opacity: 0;
@@ -261,6 +244,8 @@ body{
 		display: none;
 	}
 	.c-all-content-links{
+		display: flex;
+		flex-direction: column;
 		z-index: 1;
 		position:absolute;
 		top: 0;
@@ -277,13 +262,23 @@ body{
 		transform:translateX(0);
 	}
 	.c-all-content-links > * {
+		flex: 1;
 		height: auto;
 		width: 100vw;
-		margin: 2vh 0;
-		font-size: 3em;
-		color: black;
+		color: dimgray;
 		text-decoration: none;
 		transition: color .15s linear;
+	}
+	.c-all-content-links>:hover {
+		box-sizing: padding-box;
+		text-decoration: none;
+		color: black;
+		font-size: 1.5em;
+		transition: font-size 0.3s ease-in-out, border-left-width 0.3s ease-in-out, border-right-width 0.3s ease-in-out;
+		padding-right: 0;
+		border-right: 1vw solid black;
+		border-left: 1vw solid black;
+		border-radius: 5%;
 	}
 	.c-all-content-middle:before {
 		left:0;
@@ -349,11 +344,11 @@ body{
 		-o-transform: rotate(-135deg);
 		transform: rotate(-135deg);
 	}
-	#profile-picture{
+	.c-profile-pic-and-icons-profile-pic{
 		width: 50vw;
 		height: 50vw;
 	}
-	#icon-github, #icon-linkedin{
+	.c-profile-pic-and-icons-social-icons-link-github, .c-profile-pic-and-icons-social-icons-link-linkedin{
 		opacity: 0;
 		width: 10vw;
 		height: 10vw;
@@ -361,15 +356,14 @@ body{
 		margin-right: 2vw;
 		transition: width 0.3s ease-out, height 0.3s ease-out;
 	}
-	#icon-github:hover, #icon-linkedin:hover{
+	.c-profile-pic-and-icons-social-icons-link-github:hover, .c-profile-pic-and-icons-social-icons-link-linkedin:hover{
 		width: 12vw;
 		height: 12vw;
 		z-index: 2;
 		transition: width 0.3s ease-out, height 0.3s ease-out;
 	}
-	#profile__text{
-
-		font-size: 3em;
+	.c-main-text{
+		font-size: 2em;
 	}
 	.c-header__nav {
 		display: flex;

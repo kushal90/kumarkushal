@@ -7,8 +7,8 @@ function writeText() {
 	else
 	skillPosition += 1;
 	if (skillPosition === 0)
-		document.getElementById("dynamic-text").innerHTML = skills[skillPosition];
-	document.getElementById("dynamic-text").innerHTML = skills[skillPosition];
+		document.getElementsByClassName("c-main-text-dynamic-text")[0].innerHTML = skills[skillPosition];
+	document.getElementsByClassName("c-main-text-dynamic-text")[0].innerHTML = skills[skillPosition];
 }
 // Animating the burger and opening the navigation menu on small screen devices.
 let burger = document.getElementById("top-burger");
@@ -23,9 +23,9 @@ burger.addEventListener("click", () =>
 function positionProfilePic() {
 		let w = window.innerWidth;
 		let h = window.innerHeight;
-		let profilePic = document.getElementById("profile-picture");
+		let profilePic = document.getElementsByClassName("c-profile-pic-and-icons-profile-pic")[0];
 		let marginLeft = (w-profilePic.width)
-			- (w-profilePic.width-document.getElementById("icon-github").width) + profilePic.width*4/100;
+			- (w-profilePic.width-document.getElementsByClassName("c-profile-pic-and-icons-social-icons-link-github")[0].width) + profilePic.width*4/100;
 		profilePic.setAttribute("style", `margin-left: ${marginLeft}px`);
 }
 
