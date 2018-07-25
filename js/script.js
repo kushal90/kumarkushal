@@ -11,12 +11,11 @@ function writeText() {
 	document.getElementsByClassName("c-main-text-dynamic-text")[0].innerHTML = skills[skillPosition];
 }
 // Animating the burger and opening the navigation menu on small screen devices.
-let burger = document.getElementById("top-burger");
+let burger = document.getElementsByClassName("c-navigation-burger")[0];
 burger.addEventListener("click", () =>
 {
-	console.log(burger.classList);
-	burger.classList.toggle("c-header__burger-clicked");
-	document.getElementsByClassName("c-all-content-links")[0].classList.toggle("c-all-content-links--active");
+	burger.classList.toggle("c-navigation-burger__clicked");
+	document.getElementsByClassName("c-all-content-links")[0].classList.toggle("c-all-content-links__active");
 });
 
 // To position profile pic in the centre.
