@@ -16,7 +16,7 @@ burger.addEventListener("click", () =>
 {
 	console.log(burger.classList);
 	burger.classList.toggle("c-header__burger-clicked");
-	document.getElementsByClassName("c-header__nav")[0].classList.toggle("c-header__nav--active");
+	document.getElementsByClassName("c-all-content-links")[0].classList.toggle("c-all-content-links--active");
 });
 
 // To position profile pic in the centre.
@@ -27,10 +27,6 @@ function positionProfilePic() {
 		let marginLeft = (w-profilePic.width)
 			- (w-profilePic.width-document.getElementById("icon-github").width) + profilePic.width*4/100;
 		profilePic.setAttribute("style", `margin-left: ${marginLeft}px`);
-		console.log(marginLeft);
-		console.log(document.getElementById("profile-picture").width);
-		console.log(document.getElementById("icon-github").width);
-	// document.getElementById("body").setAttribute("style", `max-height: ${w}`);
 }
 
 let interval = setInterval(writeText, 1000);
