@@ -168,14 +168,14 @@ body{
 	animation-delay: calc(var(--header-animation-time)*1.2 + 1.7s);
 	animation-fill-mode: forwards;
 	grid-area: profile-text;
-	font-size: 2em;
+	font-size: 1.5em;
 	line-height: 1.375em;
 }
 .c-main-text-dynamic-text{
 	margin: 2vh 0 0 0;
 	color: dodgerblue;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 2em;
 	line-height: 1.375em;
 }
 @keyframes fadeInFromTop {
@@ -239,9 +239,7 @@ body{
 
 @media screen and (orientation: portrait){
 
-	.c-header{
-		display: none;
-	}
+
 	.c-all-content-links{
 		z-index: 2;
 		display: flex;
@@ -253,6 +251,7 @@ body{
 		height: 100vh;
 		padding-top: 8vh;
 		padding-bottom: 8vh;
+		padding-right: 1.5vw;
 		background-color: white;
 		transform: translateX(-100vw);
 		transition: transform 0.5s ease-out;
@@ -261,6 +260,7 @@ body{
 		transform:translateX(0);
 	}
 	.c-all-content-links > * {
+		font-size: 2.5em;
 		flex: 1;
 		height: auto;
 		width: 100vw;
@@ -272,12 +272,10 @@ body{
 		box-sizing: padding-box;
 		text-decoration: none;
 		color: black;
-		font-size: 1.5em;
+		font-size: 3em;
 		transition: font-size 0.3s ease-in-out, border-left-width 0.3s ease-in-out, border-right-width 0.3s ease-in-out;
 		padding-right: 0;
-		border-right: 1vw solid black;
-		border-left: 1vw solid black;
-		border-radius: 5%;
+		border-right: 1.5vw solid black;
 	}
 	.c-all-content-middle:before {
 		left:0;
@@ -363,6 +361,6 @@ body{
 		transition: width 0.3s ease-out, height 0.3s ease-out;
 	}
 	.c-main-text{
-		font-size: 2em;
+		font-size: 3em;
 	}
 }
