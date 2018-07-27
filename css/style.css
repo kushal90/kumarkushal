@@ -10,10 +10,6 @@
 	--header-animation-time: .5s;
 	--header-padding: 3vh;
 	--font-size: 16px;
-	--background: -3;
-	--content: -2;
-	--burger: 10;
-	--nav: 9;
 }
 
 * {
@@ -239,7 +235,6 @@ body{
 
 @media screen and (orientation: portrait){
 
-
 	.c-all-content-links{
 		z-index: 2;
 		display: flex;
@@ -266,8 +261,9 @@ body{
 		width: 100vw;
 		color: dimgray;
 		text-decoration: none;
-		transition: color .15s linear;
+		transition: color .3s linear, font-size 0.3s ease-in-out;
 	}
+
 	.c-all-content-links>:hover {
 		box-sizing: padding-box;
 		text-decoration: none;
@@ -275,7 +271,8 @@ body{
 		font-size: 3em;
 		transition: font-size 0.3s ease-in-out, border-left-width 0.3s ease-in-out, border-right-width 0.3s ease-in-out;
 		padding-right: 0;
-		border-right: 1.5vw solid black;
+		border: none;
+		/*border-right: 1.5vw solid black;*/
 	}
 	.c-all-content-middle:before {
 		left:0;
@@ -284,9 +281,10 @@ body{
 		position: relative;
 		z-index: 3;
 		margin: 3vh 0 3vh 3vh;
-		width: calc(30vw/6);
-		height: calc(24vw/6);
-		margin-right: 15px;
+		width: calc(5vw);
+		height: calc(4vw);
+		max-width: 60px;
+		max-height: 48px;
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
