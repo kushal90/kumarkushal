@@ -1,77 +1,129 @@
-.c-all-content__projects{
-	box-sizing: inherit;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto auto auto;
-	margin: 4vh 0.5vw;
-	padding: 0 0 0.5vw 0;
-	justify-items: center;
+:root{
+	--font-size: 16px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	margin:0;
+	padding: 0;
+	/*overflow-x: hidden;*/
+	font-family: 'Comfortaa', Geneva, Tahoma, Verdana, sans-serif;
+	font-size: var(--font-size);
+	letter-spacing: 1px;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	margin: 0 0 0 0;
+}
+
+.main-title{
+	display: flex;
+	justify-content: center;
 	align-items: center;
+	font-size: 2.5em;
+	padding: 1vh 0 3vh 0;
 }
-#projects-title{
-	padding: 0 0 3vh 0;
-	font-size: x-large;
-	opacity: 0;
-	animation: visibility 0.5s ease-in;
-	animation-delay: calc(var(--header-animation-time)*1.2 + 2.2s);
-	animation-fill-mode: forwards;
+
+.main-projects{
+	display: flex;
+	flex-direction: column;
 }
-.c-projects-portfolio{
-	box-sizing: inherit;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 0.5vw;
-	margin: 0 0.5vw;
-	justify-self: stretch;
+
+a{
+	text-decoration: none;
+	color: black;
 }
-.c-project__item{
-	box-sizing: inherit;
-	border: 1px solid transparent;
-	border-radius: 1vw;
-	height: calc((50vw - 0.5vw - 0.25vw)*1.5);
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 4fr 1fr;
-	grid-template-areas: "status date" "image image" "title title";
-	transition: all 0.5s ease-in;
-	transition-delay: 0.25s;
+
+.main-projects-item{
+	display: flex;
+	max-height: 70vh;
+	margin: 0 0 2vh 0;
 }
-.c-project__item:nth-child(n){
-	opacity: 0;
-	animation: project__item-animation 1s ease-in;
-	animation-delay: calc(var(--header-animation-time)*1.2 + 2.7s);
-	animation-fill-mode: forwards;
-}
-.c-project__item:nth-child(2n){
-	opacity: 0;
-	animation: project__item-animation-even 1s ease-in;
-	animation-delay: calc(var(--header-animation-time)*1.2 + 2.7s);
-	animation-fill-mode: forwards;
-}
-.c-project__item:hover{
-	border-color: black;
-}
-.c-project__item__title{
-	grid-area: title;
-	justify-self: center;
-	align-self: center;
-}
-.c-project__item__date{
-	grid-area: date;
-	justify-self: center;
-	align-self: center;
-}
-#all-projects-link{
+
+.main-projects-item-image{
+	flex:4;
 	display: flex;
 	align-items: center;
-	margin: 5vh 0 0 0;
+	justify-content: center;
 }
-#all-projects-link:after{
-	content: "";
-	display: block;
-	background: url("../assets/images/right-arrow.svg") no-repeat;
-	width: 15px;
-	height: 15px;
-	float: right;
-	margin: 0 6px 0 6px;
+
+.main-projects-item-image img{
+	max-height: 70vh;
+	max-width: 80vw;
+}
+
+.main-projects-item-title{
+	flex:1; /* To give the title text 1/5th of the screen space */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transition: font-size 0.3s ease-in-out;
+}
+
+.main-projects-item:hover > .main-projects-item-title{
+	font-size: 2em;
+	transition: font-size 0.3s ease-in-out;
+}
+
+/* To have the title alternate between left and right position on the screen */
+div.main-projects a:nth-child(2n) div:nth-child(2n+1){
+order: 2;
+}
+
+@media screen and (orientation: portrait) {
+
+	.main-title{
+		font-size: 3em;
+	}
+
+	.main-projects-item{
+		border-bottom: 5px dotted black;
+		border-top: 5px dotted black;
+		padding: 5px 0 0 0;
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 4vh 0;
+		max-width: initial;
+		max-height: initial;
+	}
+	.main-projects-item-image img{
+		max-width: initial;
+		max-height: initial;
+		width: 100vw;
+	}
+
+	/*.main-projects-item:hover{*/
+		/*max-width: 100vw;*/
+		/*max-height: fit-content;*/
+	/*}*/
+
+	/*.main-projects-item:hover img{*/
+		/*transform: scale(1.5);*/
+	/*}*/
+
+	.main-projects-item-title{
+		font-size: 2.5em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		transition: font-size 0.3s ease-in-out;
+		margin-right: 1vw;
+	}
+	.main-projects-item:hover > .main-projects-item-title{
+		font-size: 3em;
+		transition: font-size 0.3s ease-in-out;
+	}
+	div.main-projects a:nth-child(2n) div:nth-child(2n+1){
+		order: initial;
+	}
+	.main-projects-item-title{
+		order: 2;
+	}
 }
