@@ -9,7 +9,6 @@ html{
 
 body{
     display: flex;
-    flex: 1;
     justify-content: center;
     height: 100%;
     width: 100%;
@@ -53,17 +52,18 @@ body{
 }
 
 #minute-hand{
-    height: 40%;
+    height: 35%;
     width: 0.3em;
     left:calc(50% - 0.15em);
-    top:10%;
+    top:15%;
     transform-origin: 50% 100%;
     /*animation: mymove linear calc(60*60s) infinite;*/
 }
 
 #second-hand{
-    height: 50%;
+    height: 40%;
     width: 0.1em;
+	top: 10%;
     left:calc(50% - 0.05em);
     transform-origin: 50% 100%;
     /*animation: mymove linear calc(60s) infinite;*/
@@ -71,6 +71,6 @@ body{
 
 .clock__centre{
     position: absolute;
-    left: calc(50% - 3rem);
-    top: calc(50% - 3rem);
+    left: calc(50% - 3.1rem);
+    top: calc(50% - 3.2rem);
 }

@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	};
 	if(isTouchDevice()){
 		ball.addEventListener("touchend", touchOrClick, false);
+		ball.addEventListener("click", touchOrClick, false);
 	} else{
 		ball.addEventListener("click", touchOrClick, false);
 	}

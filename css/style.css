@@ -79,6 +79,7 @@ body{
 	display: flex;
 	height: 25vh;
 	width: 20vw;
+	max-width: 300px;
 	align-items: center;
 	justify-content: center;
 	padding-right: 0.5vw;

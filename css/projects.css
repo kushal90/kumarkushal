@@ -64,6 +64,11 @@ a{
 	align-items: center;
 	text-align: center;
 	transition: font-size 0.3s ease-in-out;
+	flex-direction: column;
+}
+
+.main-projects-item-code-link{
+
 }
 
 .main-projects-item:hover > .main-projects-item-title{

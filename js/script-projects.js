@@ -1,2 +1,7 @@
-let itemTitle = document.getElementsByClassName("main-projects-item-title")[0];
-itemTitle
+let item = document.getElementsByClassName("main-projects-item")[0];
+item.style.cursor=`pointer`;
+item.onClick = function() {
+
+};
+
+document.addEventListener();
