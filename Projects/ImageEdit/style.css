@@ -25,20 +25,17 @@ body {
 }
 
 h1{
-	margin: 2vh 0 2vh 0;
-    height: 5vh;
+	margin: 2vh 0 3vh 0;
 }
 
 .sliders{
     display: flex;
 	width: 100vw;
     justify-content: space-evenly;
-	border: 1px solid blue;
 	margin: 0 2vw 5vh 2vw;
 }
 
 .input-container{
-	border: 1px solid black;
 	display: flex;
 	flex: 1;
     margin-left: 10px;
@@ -49,7 +46,6 @@ h1{
 }
 
 label{
-	border: 1px solid black;
 	align-self: center;
 	justify-self: center;
 }

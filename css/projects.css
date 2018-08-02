@@ -88,8 +88,8 @@ order: 2;
 	}
 
 	.main-projects-item{
-		border-bottom: 5px dotted black;
-		border-top: 5px dotted black;
+		/*border-bottom: 5px dotted black;*/
+		/*border-top: 5px dotted black;*/
 		padding: 5px 0 0 0;
 		display: flex;
 		flex-direction: column;
