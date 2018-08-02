@@ -263,6 +263,7 @@ body{
 		color: dimgray;
 		text-decoration: none;
 		transition: color .3s linear, font-size 0.3s ease-in-out;
+		max-width: initial;
 	}
 
 	.c-all-content-links>:hover {
