@@ -266,6 +266,10 @@ body{
 		max-width: initial;
 	}
 
+	.c-all-content-links > *:focus {
+		outline: none;
+	}
+
 	.c-all-content-links>:hover {
 		box-sizing: padding-box;
 		text-decoration: none;

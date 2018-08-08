@@ -69,10 +69,10 @@ a:link {
 }
 
 @keyframes bounce {
-	0% {margin-top:0px; animation-timing-function: ease-in}
+	0% {margin-top:0; animation-timing-function: ease-in}
 	48% {width: 20vh}
 	50% {margin-top:calc(100vh - 20vh); width:22vh; animation-timing-function: ease-out}
-	100% {margin-top:0px;}
+	100% {margin-top:0;}
 }
 
 .unselectable {
