@@ -1,5 +1,5 @@
 
-let skills = ["Javascript", "Node.js", "BrowserSync", "npm"];
+let skills = ["Computer Vision", "Machine learning", "Javascript", "Angular"];
 let skillPosition = -1;
 function writeText() {
 	if (skillPosition === skills.length-1)
