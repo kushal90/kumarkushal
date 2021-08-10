@@ -1,5 +1,5 @@
 
-let skills = ["Angular", "Machine learning", "Computer Vision", "Javascript"];
+let skills = ["Machine learning", "Python", "Computer Vision", "Java"];
 let skillPosition = -1;
 function writeText() {
 	if (skillPosition === skills.length-1)
@@ -28,5 +28,5 @@ function positionProfilePic() {
 		profilePic.setAttribute("style", `margin-left: ${marginLeft}px`);
 }
 
-let interval = setInterval(writeText, 1000);
+let interval = setInterval(writeText, 2000);
 positionProfilePic();
