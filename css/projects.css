@@ -1,5 +1,6 @@
 :root{
 	--font-size: 16px;
+	--main-content-top: 10vh;
 }
 
 *{
@@ -19,6 +20,40 @@ body{
 	width: 100vw;
 	height: 100vh;
 	margin: 0 0 0 0;
+}
+
+.back-button{
+	display: flex;
+	height: var(--main-content-top);
+	width: 100vw;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+
+.back-button a{
+	margin-left: 1vw;
+}
+
+.back-button a:hover img{
+	transform: rotate(360deg);
+	transition: transform .5s ease-in-out;
+}
+
+.back-button a:hover + .back-text {
+	visibility: visible;
+}
+
+.back-button a img{
+	width: 5vh;
+	height: 5vh;
+}
+
+.back-button div{
+	visibility: hidden;
+	padding-left: 1vw;
+	text-decoration: none;
 }
 
 .main-title{

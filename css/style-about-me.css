@@ -1,4 +1,5 @@
 :root{
+	--font-size: 16px;
 	--id-height: 40vw;
 	--id-height-mobile: 60vh;
 	--main-content-top: 10vh;
@@ -14,7 +15,7 @@ html{
 	margin:0;
 	padding: 0;
 	font-family: 'Comfortaa', Geneva, Tahoma, Verdana, sans-serif;
-	font-size: 16px;
+	font-size: var(--font-size);
 }
 
 body{
@@ -38,7 +39,7 @@ body{
 }
 
 .back-button a:hover img{
-	transform: rotate(360deg) scale(1.5);
+	transform: rotate(360deg);
 	transition: transform .5s ease-in-out;
 }
 
