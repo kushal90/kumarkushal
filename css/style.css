@@ -77,7 +77,7 @@ body{
 .c-all-content-links > * {
 	color: black;
 	display: flex;
-	height: 25vh;
+	height: 33.33%;
 	width: 20vw;
 	#max-width: 300px;
 	align-items: center;

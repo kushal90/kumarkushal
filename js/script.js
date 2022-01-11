@@ -1,5 +1,5 @@
 
-let skills = ["Machine learning", "Python", "Computer Vision", "Java"];
+let skills = ["Python", "Django", "Javascript", "Azure", "Docker", "Kubernetes", "Microservices", "SQL", "CI/CD", "Agile", "TDD", "Git", "Scrum", "Kanban", "Jira", "TailwindCSS", "Java"];
 let skillPosition = -1;
 function writeText() {
 	if (skillPosition === skills.length-1)
